@@ -1,0 +1,67 @@
+<div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="10px">
+    <div fxFlex="30">
+        <div class="box">
+            <table>
+       
+                <tr>
+                    <th></th>                
+                    <th style="background:#ff8080;">الرئيسية </th>
+                    <th style="background:#ff8080;">الفرعية </th>
+            
+                </tr>
+                <tr>  
+                    <td style="background:#ff4d4d;">
+                        عدد الشوارع الرئيسية
+                    </td>
+                    <td style="background:#ff8080;">
+                        عدد الشوارع 
+                    </td>
+                    <td style="background:#ff8080;">
+                        عدد الشوارع 
+                    </td>
+                </tr>
+                <tr>  
+                    <td style="background:#00cc00">
+                        أطوال الشوارع الرئيسية
+                    </td>
+                    <td style="background:#ccffcc;">
+                        عدد الشوارع 
+                    </td>
+                    <td style="background:#ccffcc;">
+                        عدد الشوارع 
+                    </td>
+                </tr>
+                <tr>  
+                    <td style="background:#4d94ff;">
+                        مساحات الشوارع الرئيسية
+                    </td>
+                    <td style="background:#b3d1ff;">
+                        عدد الشوارع 
+                    </td>
+                    <td style="background:#b3d1ff">
+                        عدد الشوارع 
+                    </td>
+                </tr>
+    
+    </table>
+    
+        </div>
+    </div>
+    <div fxFlex="30">
+        <div class="box">
+            <app-widget-pie [data]="pieStatusdata"></app-widget-pie>
+        </div> 
+    </div>
+    <div fxFlex="30">
+            <div class="box">
+                <app-widget-pie [data]="pieStatusdata"></app-widget-pie>
+            </div>
+    </div>
+</div>
+<div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="10px">
+<div class="box">
+    <app-widget-area></app-widget-area>
+</div>
+</div>
+
+

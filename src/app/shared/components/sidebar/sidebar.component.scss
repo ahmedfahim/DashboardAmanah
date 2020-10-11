@@ -1,0 +1,49 @@
+:host{
+    .mat-icon{
+        vertical-align: middle;
+        margin-right: 20px;
+    }
+}
+.profile-card{
+    text-align: center;
+    padding:0px;
+    img{
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 20%;
+    }
+}
+mat-nav-list{
+    padding-top:0px;
+    overflow: hidden;
+    background: linear-gradient(0deg,#fff,#d5d5d5 75%)
+}
+.text{
+    font-size: large;
+    font-family: "Avenir Next W01","Avenir Next W00","Avenir Next",Avenir,"Helvetica Neue",sans-serif;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width:inherit;
+    background-color: #f1f1f1;
+  }
+  
+  li a {
+    display: block;
+    color: #000;
+    padding: 0px 8px;
+    text-decoration: none;
+  }
+  
+  h2 {
+    background-color: #11835b;
+    color: white;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
