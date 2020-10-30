@@ -24,6 +24,4 @@ export class DashboardComponent implements OnInit {
     this.bigChart = this.dashboardService.BigChart();
     //this.piechart1 = this.dashboardService.PieChart();
   }
-  
-
 }

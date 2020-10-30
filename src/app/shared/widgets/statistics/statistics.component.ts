@@ -14,8 +14,9 @@ export class StatisticsComponent implements OnInit {
     y: 61.41,
     sliced: true,
     selected: true,
-    color:'Green'
-}, {
+    color:'#009933'
+},
+{
     name: 'جيد',
     y: 11.84,
     color:'blue'
@@ -28,6 +29,36 @@ export class StatisticsComponent implements OnInit {
     y: 4.67,
     color:'red'
 }];
+pieStatusdata2=[{
+  name: 'الجنوب',
+  y: 14.7,
+  sliced: true,
+  selected: true
+},
+{
+  name: 'طيبة',
+  y: 15.7
+}, {
+  name: 'أبحر',
+  y: 17.08
+}, {
+  name: 'الجامعة',
+  y: 6.3
+}
+, {
+  name: 'الصفا',
+  y:7.8
+}, {
+  name: 'العزيزية',
+  y: 7.8
+}, {
+  name: 'المطار',
+  y: 6.7
+}, {
+  name: 'بريمان',
+  y: 5.5
+}
+];
   ngOnInit(): void {
   }
 

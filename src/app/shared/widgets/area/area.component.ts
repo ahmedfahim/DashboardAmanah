@@ -19,7 +19,7 @@ export class AreaComponent implements OnInit {
           type: 'column',
       },
       title: {
-          text: ' عدد المناطق الممسوحة /البلدية'
+          text: ' إجمالي مصاريف صيانة الطرق/ريال'
       },
       subtitle: {
           text: ''
@@ -29,7 +29,7 @@ export class AreaComponent implements OnInit {
       },
 
       xAxis: {
-          categories: ['المسحة الأولى','المسحة الثانية'],
+          categories: ['مليون ريال'],
           tickmarkPlacement: 'on',
           title: {
               enabled: false
@@ -61,65 +61,23 @@ export class AreaComponent implements OnInit {
           }
       },
       series: [{
-          name: 'أبحر',
-          data: [172, 170]
+          name: 'ضعيف',
+          data: [33172840],
+          color:'red'
       }, {
-          name: 'أبحر الشمالية',
-          data: [85, 90]
+          name: 'لا بأس به ',
+          data: [58708669],
+          color:'yellow'
+
       }, {
-          name: 'الصفا',
-          data: [79, 203]
-      }, {
-          name: 'الجنوب',
-          data: [75, 61]
-      }, {
-          name: 'البلد',
-          data: [38, 2]
-      },
-      {
-        name: 'جدة الجديدة',
-        data: [69, 69]
-    },
-    {
-        name: 'جدة التاريخية',
-        data: [3, 0]
-    }, {
-        name: 'العزيزية',
-        data: [99, 96]
-    }, {
-        name: 'الشرفية',
-        data: [47, 11]
-    }, {
-        name: 'أم السلم',
-        data: [47, 2]
-    }, {
-        name: 'بريمان',
-        data: [47,45]
-    }, {
-        name: 'ذهبان',
-        data: [39, 29]
-    }, {
-        name: 'طيبة',
-        data: [74, 95]
-    }, {
-        name: 'المليساء',
-        data: [55,36]
-    }, {
-        name: 'ثول',
-        data: [10, 2]
-    },
-    {
-        name: 'المطار',
-        data: [66, 65]
-    },
-    {
-        name: 'أبرق الرغامة',
-        data: [19,19]
-    },
-    {
-        name: 'الجامعة',
-        data: [48, 48]
-    },
+          name: 'جيد',
+          data: [51819682],
+          color:'blue'
+      },      {
+        name: 'ممتاز',
+        data: [83705310],
+        color:'green'
+    }
     ]
     
   

@@ -1,67 +1,50 @@
-<div class="box-row" fxLayout="row" fxLayoutAlign="space-between stretch">
-    <div fxFlex="30" fxLayoutAlign="stretch stretch">
-        <div class="box">
-            <table>
-       
-                <tr>
-                    <th></th>                
-                    <th style="background:#ff8080;">الرئيسية </th>
-                    <th style="background:#ff8080;">الفرعية </th>
-            
-                </tr>
-                <tr>  
-                    <td style="background:#ff4d4d;">
-                        عدد الشوارع الرئيسية
-                    </td>
-                    <td style="background:#ff8080;">
-                        عدد الشوارع 
-                    </td>
-                    <td style="background:#ff8080;">
-                        عدد الشوارع 
-                    </td>
-                </tr>
-                <tr>  
-                    <td style="background:#00cc00">
-                        أطوال الشوارع الرئيسية
-                    </td>
-                    <td style="background:#ccffcc;">
-                        عدد الشوارع 
-                    </td>
-                    <td style="background:#ccffcc;">
-                        عدد الشوارع 
-                    </td>
-                </tr>
-                <tr>  
-                    <td style="background:#4d94ff;">
-                        مساحات الشوارع الرئيسية
-                    </td>
-                    <td style="background:#b3d1ff;">
-                        عدد الشوارع 
-                    </td>
-                    <td style="background:#b3d1ff">
-                        عدد الشوارع 
-                    </td>
-                </tr>
-    
-    </table>
-    
-        </div>
-    </div>
-    <div fxFlex="30">
-        <div class="box">
-            <app-widget-pie [data]="pieStatusdata"></app-widget-pie>
-        </div> 
-    </div>
-    <div fxFlex="30">
-            <div class="box">
-                <app-widget-pie [data]="pieStatusdata"></app-widget-pie>
-            </div>
-    </div>
-</div>
 <div class="box-row" fxLayout="row" fxLayoutAlign="center center">
     <div class="box">
         <app-widget-area></app-widget-area>
     </div>
 </div>
-
-
+<div class="box-row" fxLayout="row" fxLayoutAlign="space-between stretch">
+    <div fxFlex="20" fxLayoutAlign="stretch center">
+        <div class="box">
+            <div class="row" >
+                <div class="column">
+                    <p> أعداد شوارع جدة</p>
+                </div>
+                <div class="column">
+                    <p> 1383  رئيسي</p>
+                    <p> 48544  فرعي</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column1">
+                    <p> مساحات الشوارع /م2</p>
+                </div>
+                <div class="column1">
+                    <p> 36977747 رئيسي</p>
+                    <br>
+                    <p> 87674150 فرعي</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column2">
+                    <p> أطوال الشوارع /كيلو</p>
+                </div>
+                <div class="column2">
+                    <p> 10103.5 رئيسي</p>
+                    <br>
+                    <p> 7160.8 شارع</p> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <div fxFlex="30">
+        <div class="box">
+            <app-widget-pie [data]="pieStatusdata"></app-widget-pie>
+        </div>
+    </div>
+    <div fxFlex="30">
+        <div class="box">
+            <app-widget-pie [data]="pieStatusdata2"></app-widget-pie>
+        </div>
+    </div>
+</div>

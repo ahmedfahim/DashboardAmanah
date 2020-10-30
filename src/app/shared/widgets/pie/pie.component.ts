@@ -20,7 +20,7 @@ export class PieComponent implements OnInit {
   {
     this.chartOptions= {
       chart: {
-        plotBackgroundColor: null,
+        plotBackgroundColor: '#f4f5f8',
         plotBorderWidth: null,
         plotShadow: false,
         type: 'pie'
@@ -35,6 +35,8 @@ export class PieComponent implements OnInit {
         point: {
             valueSuffix: '%'
         }
+    }, exporting:{
+      enabled:false
     },
     credits:{
       enabled:true,
@@ -62,6 +64,7 @@ export class PieComponent implements OnInit {
             showInLegend: true
         }
     },
+    
     series: [{
         name: 'P',
         colorByPoint: true,
